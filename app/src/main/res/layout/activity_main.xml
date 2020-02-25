@@ -87,6 +87,7 @@
         android:layout_width="300sp"
         android:layout_height="35sp"
         android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
         android:textColor="@color/White"
         android:text="@string/Login" />
 
@@ -98,6 +99,7 @@
         android:layout_gravity="center"
         android:textSize="10sp"
         android:background="@drawable/rounded_button"
+        android:textAllCaps="false"
         android:textColor="@color/White"
         android:text="@string/SignUp" />
 
