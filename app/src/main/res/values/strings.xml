@@ -21,4 +21,11 @@
     <string name="verify_OTP">Verify OTP</string>
     <string name="change_data">Change email/phone number</string>
     <string name="resend">RESEND OTP</string>
+    <string name="password">PASSWORD</string>
+    <string name="password_hint">Password</string>
+    <string name="Confirm_password">CONFIRM PASSWORD</string>
+    <string name="Confirm_password_hint">Repeat Password</string>
+    <string name="agreement">I agree with all Terms &amp; Conditions</string>
+    <string name="register_as_service_provider">Register me as a service provider</string>
+    <string name="already">Already have an account? Login</string>
 </resources>
