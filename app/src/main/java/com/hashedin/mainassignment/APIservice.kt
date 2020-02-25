@@ -13,7 +13,7 @@ interface APIservice
 
     @FormUrlEncoded
     @POST("api/v1/verify-otp/")
-    fun verifyotp(@Field("otp")type:String, @Field("username")username:String) : Call<String>
+    fun verifyotp(@Field("otp")otp:String, @Field("username")username:String) : Call<String>
 
     @FormUrlEncoded
     @POST("/api/v1/api-token-auth/")
