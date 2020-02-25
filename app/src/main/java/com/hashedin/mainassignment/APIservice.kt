@@ -17,5 +17,5 @@ interface APIservice
 
     @FormUrlEncoded
     @POST("/api/v1/api-token-auth/")
-    fun userlogin(@Field("otp")type:String, @Field("username")username:String) : Call<String>
+    fun userlogin(@Field("password")password:String, @Field("username")username:String) : Call<String>
 }
