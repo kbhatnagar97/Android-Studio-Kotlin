@@ -20,6 +20,16 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this,SignUp::class.java)
             startActivity(intent)
         }
+        button.setOnClickListener()
+        {
+            val intent = Intent(this,LogIn::class.java)
+            startActivity(intent)
+        }
+        button3.setOnClickListener()
+        {
+            val intent = Intent(this,LogIn::class.java)
+            startActivity(intent)
+        }
 
         viewpager.adapter = adapter
     }
