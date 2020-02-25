@@ -12,8 +12,14 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
+        button1.setOnClickListener()
+        {
+
+        }
+
         button2.setOnClickListener()
         {
+
             if(true)
             {
                 val intent = Intent(this,sign_up2::class.java)
