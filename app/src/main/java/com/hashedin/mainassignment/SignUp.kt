@@ -12,6 +12,18 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
-        
+        button2.setOnClickListener()
+        {
+            if(true)
+            {
+                val intent = Intent(this,sign_up2::class.java)
+                startActivity(intent)
+                Toast.makeText(this, "OTP entered is correct", Toast.LENGTH_SHORT).show()
+            }
+            else
+            {
+                Toast.makeText(this, "OTP entered is incorrect", Toast.LENGTH_SHORT).show()
+            }
+        }
     }
 }
