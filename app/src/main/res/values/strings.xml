@@ -28,4 +28,6 @@
     <string name="agreement">I agree with all Terms &amp; Conditions</string>
     <string name="register_as_service_provider">Register me as a service provider</string>
     <string name="already">Already have an account? Login</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="not_member_sign_up">Not a member yet? Sign up now</string>
 </resources>

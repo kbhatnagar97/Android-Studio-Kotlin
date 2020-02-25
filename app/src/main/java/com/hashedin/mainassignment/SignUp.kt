@@ -18,7 +18,8 @@ class SignUp : AppCompatActivity() {
 
         val mob = mobile_number.text.toString()
         val otp = otp.text.toString()
-        var flag : Int = 0
+        var flagGenerate : Int = 0
+        var flagVerify : Int = 0
 
         button1.setOnClickListener()
         {
@@ -32,7 +33,7 @@ class SignUp : AppCompatActivity() {
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     if (response.isSuccessful) {
                         Log.e("Successful", "OTP Sent")
-                        flag = 1
+                        flagGenerate = 1
                     }
                     else
                     {
@@ -40,12 +41,12 @@ class SignUp : AppCompatActivity() {
                     }
                 }
             })
-            if(flag == 1)
+            if(flagGenerate == 1)
             {
                 val intent = Intent(this,sign_up2::class.java)
                 startActivity(intent)
                 Toast.makeText(this, "OTP Generated", Toast.LENGTH_SHORT).show()
-                flag = 0
+                flagGenerate = 0
             }
             else
             {
@@ -64,22 +65,23 @@ class SignUp : AppCompatActivity() {
 
                 override fun onResponse(call: Call<String>, response: Response<String>) {
                     if (response.isSuccessful) {
+                        flagVerify = 1
                         Log.e("Successful", "OTP Correct")
-                        flag = 1
                     }
                     else
                     {
+                        flagVerify = 1
                         Log.e("Failed", "OTP Incorrect")
                     }
                 }
             })
 
-            if(flag == 1)
+            if(flagVerify == 1)
             {
                 val intent = Intent(this,sign_up2::class.java)
                 startActivity(intent)
                 Toast.makeText(this, "OTP entered is correct", Toast.LENGTH_SHORT).show()
-                flag = 0
+                flagVerify = 0
             }
             else
             {
