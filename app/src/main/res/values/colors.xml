@@ -6,5 +6,6 @@
     <color name="Theme">#3A59CB</color>
     <color name="Purple">#4556C4</color>
     <color name="White">#FFFFFF</color>
-    <color name="grey">#B7BBC5</color>
+    <color name="grey">#919192</color>
+    <color name="black">#000000</color>
 </resources>
