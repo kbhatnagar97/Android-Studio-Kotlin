@@ -16,6 +16,12 @@ class SignUp : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
 
+        back_button.setOnClickListener()
+        {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+        }
+
         val mob = mobile_number.text.toString()
         val otp = otp.text.toString()
         var flagGenerate : Int = 0
