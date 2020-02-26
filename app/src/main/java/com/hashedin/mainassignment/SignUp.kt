@@ -94,5 +94,16 @@ class SignUp : AppCompatActivity() {
                 Toast.makeText(this, "OTP entered is incorrect", Toast.LENGTH_SHORT).show()
             }
         }
+
+        text3.setOnClickListener()
+        {
+            if(true)
+            {
+//                val intent = Intent(this,sign_up2::class.java)
+//                startActivity(intent)
+                Toast.makeText(this, "The OTP could not be generated again", Toast.LENGTH_SHORT).show()
+                flagGenerate = 0
+            }
+        }
     }
 }

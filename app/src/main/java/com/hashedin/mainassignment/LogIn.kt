@@ -21,5 +21,11 @@ class LogIn : AppCompatActivity() {
             startActivity(intent)
         }
 
+        textView3.setOnClickListener()
+        {
+            val intent = Intent(this,SignUp::class.java)
+            startActivity(intent)
+        }
+
     }
 }

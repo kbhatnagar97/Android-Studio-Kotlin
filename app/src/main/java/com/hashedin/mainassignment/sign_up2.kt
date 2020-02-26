@@ -17,6 +17,12 @@ class sign_up2 : AppCompatActivity() {
             startActivity(intent)
         }
 
+        button1.setOnClickListener()
+        {
+            val intent = Intent(this,LogIn::class.java)
+            startActivity(intent)
+        }
+
         text2.setOnClickListener()
         {
             val intent = Intent(this,LogIn::class.java)

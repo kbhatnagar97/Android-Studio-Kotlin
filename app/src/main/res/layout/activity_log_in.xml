@@ -89,7 +89,7 @@
         android:textStyle="bold"
         android:textSize="12sp"/>
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
